@@ -6,6 +6,8 @@
 <p align="center"><code>HTML</code> · <code>SVG</code> · <code>CSS</code> · <code>JavaScript</code><br>
 单文件 · 零依赖 · 响应式 · GitHub Pages 就绪</p>
 
+<p align="center"><sub>Made with DSH (DeepSeek Harness) + DeepSeek Flash</sub></p>
+
 <p align="center"><a href="https://zeyu118-abc.github.io/pelican-slow-ride/"><strong>↗ 在线预览</strong></a></p>
 
 ![白鹈鹕的午后骑行页面预览](assets/preview.png)
@@ -15,6 +17,23 @@
 这是一个用原生 HTML、SVG、CSS 和 JavaScript 绘制并驱动的动画小场景。鹈鹕围着锈红围巾，车篮里放着一根法棍和一束薰衣草；它会在盐沼小路上不紧不慢地骑下去。
 
 页面没有构建步骤、外部字体或第三方库，所有插画、动画和样式都在 `index.html` 里。双击打开就能看，也可以直接部署到 GitHub Pages。
+
+## 它是怎么产生的
+
+项目始于一句简单的自然语言需求：
+
+> 做一个白色鹈鹕骑自行车的动画网页。
+
+从分镜、插画、SVG 路径、动画节奏，到响应式布局和 GitHub Pages 发布配置，整个项目都在 **DSH（DeepSeek Harness）** 中由 **DeepSeek Flash** 模型通过多轮对话生成、检查和调整。人工负责提出方向、确认画面和验收结果。
+
+- **生成工具：** DSH（DeepSeek Harness）
+- **模型：** DeepSeek Flash
+- **生成方式：** 自然语言对话 + 代码执行 + 浏览器验收
+- **交付形式：** 单个 `index.html`，内联 SVG / CSS / JavaScript
+
+页面里的插画不是外部图片或素材，而是直接用 SVG 路径绘制；动画也不是视频，而是由 CSS 和 JavaScript 实时驱动。页面本身在运行时不需要联网，也不依赖任何 AI 服务。
+
+仓库创建、Git 提交和 GitHub Pages 发布，同样由 DSH 在获得账号授权后自动完成。
 
 ## 动画细节
 

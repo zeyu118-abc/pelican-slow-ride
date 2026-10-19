@@ -1,11 +1,13 @@
 <!DOCTYPE html>
+<!-- Made with DSH (DeepSeek Harness) + DeepSeek Flash -->
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#f0e3cd">
+<meta name="generator" content="DSH (DeepSeek Harness) + DeepSeek Flash">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23f4ead8'/%3E%3Ccircle cx='31' cy='30' r='14' fill='%23fdf8ec' stroke='%23263a34' stroke-width='2'/%3E%3Cpath d='M37 26 L58 32 Q61 34 58 37 L38 35 Z' fill='%23dda049' stroke='%23263a34' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M38 34 Q45 46 52 37' fill='%23e5a861' stroke='%23263a34' stroke-width='1.6'/%3E%3Ccircle cx='33' cy='26' r='1.8' fill='%23263a34'/%3E%3C/svg%3E">
-<meta name="description" content="黄昏的盐沼边，一只白色鹈鹕骑着青绿色自行车缓缓前行。一个会呼吸、会眨眼的动画小场景。">
+<meta name="description" content="黄昏的盐沼边，一只白色鹈鹕骑着青绿色自行车缓缓前行。一个由 DSH + DeepSeek Flash 生成的动画小场景。">
 <title>白鹈鹕的午后骑行 · Pelican Slow Ride</title>
 <style>
   :root{
@@ -469,6 +471,10 @@
     z-index: 10;
     right: clamp(28px, 4vw, 64px);
     bottom: calc(clamp(28px, 4.3vh, 48px) + 66px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
     font-size: 8px;
     font-weight: 600;
     letter-spacing: .22em;
@@ -477,6 +483,24 @@
     text-shadow: 0 1px 10px rgba(250, 244, 230, .9);
     pointer-events: none;
     animation: fadeUp 1s 1.2s cubic-bezier(.2,.75,.25,1) both;
+  }
+  .credit .made-with,
+  .mobile-footer .made-with{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(43, 61, 54, .72);
+    letter-spacing: .17em;
+  }
+  .credit .made-with::before,
+  .mobile-footer .made-with::before{
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--rust);
+    opacity: .8;
+    flex: 0 0 auto;
   }
 
   .mobile-footer{
@@ -702,6 +726,11 @@
       font-weight: 650;
       letter-spacing: .2em;
       color: rgba(43, 61, 54, .48);
+    }
+    .mobile-footer .made-with{
+      margin-top: 2px;
+      font-size: 7px;
+      color: rgba(43, 61, 54, .64);
     }
   }
 
@@ -1355,7 +1384,10 @@
     </div>
   </section>
 
-  <div class="credit" aria-hidden="true">PELICANUS ONOCROTALUS · SALT MARSH</div>
+  <div class="credit">
+    <span>PELICANUS ONOCROTALUS · SALT MARSH</span>
+    <span class="made-with">MADE WITH DSH + DEEPSEEK FLASH</span>
+  </div>
 
   <div class="controls" role="group" aria-label="动画控制">
     <button class="icon-btn" id="playToggle" type="button" aria-label="暂停动画" aria-pressed="false" title="暂停 / 播放（空格）">
@@ -1386,9 +1418,10 @@
 
   <div class="hint" aria-hidden="true"><kbd>SPACE</kbd> 暂停 &nbsp;·&nbsp; <kbd>B</kbd> 按铃</div>
 
-  <footer class="mobile-footer" aria-hidden="true">
+  <footer class="mobile-footer">
     <p>沿着盐沼，把下午骑得很长。</p>
     <span>WHITE PELICAN · SLOW RIDE · 2026</span>
+    <span class="made-with">MADE WITH DSH + DEEPSEEK FLASH</span>
   </footer>
 </main>
 
